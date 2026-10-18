@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.underbar"
+          path="/org/gnome/shell/extensions/underbar/">
+
+    <key name="reserve-space" type="b">
+      <default>false</default>
+      <summary>Keep the top bar's strip of screen reserved</summary>
+      <description>
+        Off, the default: the bar's strut is dropped, so a maximized window
+        gets the full height of the screen and covers the bar. On: windows
+        still stop below the bar as they do in stock GNOME, and the bar only
+        goes behind a window when "yield-to-above" lets it.
+      </description>
+    </key>
+
+    <key name="yield-to-above" type="b">
+      <default>true</default>
+      <summary>Let Always-on-Top windows pass over the bar</summary>
+      <description>
+        Only has an effect while reserve-space is on. GNOME's own "Always on
+        Top" still loses to the shell's own chrome; this makes the bar drop
+        behind such a window while it overlaps the bar, and come back when it
+        does not. Windows that cannot reach the bar's strip -- anything the
+        work area constrains -- are unaffected either way.
+      </description>
+    </key>
+
+    <key name="debug" type="b">
+      <default>false</default>
+      <summary>Log every raise/lower decision to the journal</summary>
+      <description>
+        Takes effect immediately, no reload. Read it with
+        journalctl --user -f -o cat | grep underbar
+      </description>
+    </key>
+
+  </schema>
+</schemalist>

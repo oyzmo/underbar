@@ -1,0 +1,13 @@
+{
+  "uuid": "underbar@oyzmo.no",
+  "name": "Underbar",
+  "description": "Lets windows cover the top bar instead of always stopping below it. The bar is never hidden and never animates: it sits flat on the desktop and whatever you put in front of it wins. Maximized windows get the full height of the screen back. Optionally keep the space reserved and let only Always-on-Top windows pass over.",
+  "shell-version": [
+    "50"
+  ],
+  "version": 4,
+  "version-name": "0.0.4",
+  "settings-schema": "org.gnome.shell.extensions.underbar",
+  "gettext-domain": "underbar",
+  "url": "https://oyzmo.no/apps/"
+}

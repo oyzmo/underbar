@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Underbar. Palette: Sage #7FA07A / #8FB089 / #6E8C6A, Cream #F4E7D3,
+       Cocoa #4A3428.
+       The top bar runs in from the left and disappears behind a window, which
+       is the extension stated as one picture. Three things were arrived at by
+       rendering the alternatives at 48px, and all three are load-bearing:
+
+       1. The BAR is the dark shape, not the window. Whichever shape is dark is
+          read as the subject, and the subject here is the bar. It also happens
+          to be what GNOME's own top bar looks like.
+       2. The bar runs off ONE side, not both. Two symmetrical stubs poking out
+          of a centred window read as a rail with a towel hanging on it.
+       3. The bar crosses the window well below the window's top edge (60px
+          here). If it crosses near the top, the window hangs off it instead of
+          standing in front of it.
+
+       Do not add an indicator dot to the bar to make it more "top bar". It was
+       tried; at 512 it reads as an eye and the bar becomes a thermometer.
+       Two shapes, each keeping its own area -- at 48px the bar is 5px tall and
+       its visible run is 17px, which is the whole meaning of the icon. -->
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8FB089"/>
+      <stop offset="1" stop-color="#6E8C6A"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="114" fill="url(#tile)"/>
+
+  <rect x="40" y="104" width="432" height="56" rx="28" fill="#4A3428"/>
+
+  <rect x="224" y="44" width="248" height="396" rx="34" fill="#F4E7D3"/>
+</svg>
